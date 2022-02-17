@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Chapter12new/style.css">
+    <script src="https://kit.fontawesome.com/6ea944adc3.js" crossorigin="anonymous"></script>    <title>Starbuzz</title>
+</head>
+<body>
+<div class="container">
+    <h2 class="heading">КОФЕ</h2>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>Клубничный капуччино</h3>
+                <p>200 мл</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>bla bla header</h3>
+                <p>bla bla paragraph</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>bla bla header</h3>
+                <p>bla bla paragraph</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>bla bla header</h3>
+                <p>bla bla paragraph</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>bla bla header</h3>
+                <p>bla bla paragraph</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>bla bla header</h3>
+                <p>bla bla paragraph</p>
+            </div>
+        </div>
+    </div>
+    <div id="load-more">Показать ещё</div>
+</div>
+<div class="container elixirs">
+    <h2 class="heading">НАПИТКИ</h2>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>Клубничный капуччино</h3>
+                <p>200 мл</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>bla bla header</h3>
+                <p>bla bla paragraph</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>bla bla header</h3>
+                <p>bla bla paragraph</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>bla bla header</h3>
+                <p>bla bla paragraph</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>bla bla header</h3>
+                <p>bla bla paragraph</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/photocard01.png" alt="photocard01">
+            </div>
+            <div class="content">
+                <h3>bla bla header</h3>
+                <p>bla bla paragraph</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let loadMoreBtn = document.querySelector('#load-more');
+    let currentItem = 6;
+
+    loadMoreBtn.onclick = () =>{
+        let boxes = [...document.querySelectorAll('.container .box-container .box')];
+        for (var i = currentItem; i < currentItem + 6; i++){
+            boxes[i].style.display = 'inline-block';
+        }
+        currentItem += 6;
+        if(currentItem >= boxes.length){
+            loadMoreBtn.style.display = 'none';
+        }
+    }
+
+
+  document.querySelector('#load-more').addEventListener('click', function() {
+  const c = document.querySelector('.elixirs').classList;
+  c.toggle('elixirs');
+});
+
+</script>
+
+</body>
+</html>
