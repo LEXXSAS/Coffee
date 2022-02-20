@@ -5,9 +5,9 @@
 </mask>
 <g mask="url(#mask0_13_215)">
 <rect x="7.84619" y="6.23071" width="32.3077" height="32.3077" fill="url(#pattern1)"/>
-<rect x="7.84619" y="6.23071" width="32.3077" height="32.3077" fill="white"/>
+<rect x="7.84619" y="6.23071" width="32.3077" height="32.3077" fill="#342022"/>
 </g>
-<circle cx="24" cy="24" r="22.25" stroke="white" stroke-width="2.5"/>
+<circle cx="24" cy="24" r="22.25" stroke="#342022" stroke-width="2.5"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_13_215" transform="scale(0.00195312)"/>
