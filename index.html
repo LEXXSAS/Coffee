@@ -1,158 +1,349 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../Chapter12new/style.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/6ea944adc3.js" crossorigin="anonymous"></script>    <title>Starbuzz</title>
-</head>
-<body>
-<div class="container">
-    <h2 class="heading">КОФЕ</h2>
-    <div class="box-container">
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
+    <meta name="viewport" content="width=device-width">
+    <title>Starbuzz Coffee</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/6ea944adc3.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  </head> 
+
+  <body class="body">
+      <!-- Тут начинается HEADER SHADOWBOTTOM -->
+    <header class="header">
+      <div class="centerheadernew">
+        <div class="container headernew">
+          <div class="header__body shadowbottom">
+            
+            <a href="#" class="header__logo">
+              <img class="logotop" src="img/Logotopnew.png" alt="Starbuzz logo">
+            </a>
+        
+            <div class="avatarlogo">
+              <a href="#">
+                <svg class="avatarsvg" width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17" cy="9" r="7.5" stroke="white" stroke-width="3"/>
+                  <path d="M1.5 28.5C7.5 13.5 26.5 13.5 32.5 28.5" stroke="white" stroke-width="3"/>
+                  </svg>
+              </a>
             </div>
-            <div class="content">
-                <h3>Клубничный капуччино</h3>
-                <p>200 мл</p>
+            <div class="circle">
+              <svg class="circle-icon" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0.5C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5V0.5ZM19 3.5C19.8284 3.5 20.5 2.82843 20.5 2C20.5 1.17157 19.8284 0.5 19 0.5V3.5ZM2 3.5H19V0.5H2V3.5Z" fill="white"/>
+                <path d="M2 7.5C1.17157 7.5 0.5 8.17157 0.5 9C0.5 9.82843 1.17157 10.5 2 10.5V7.5ZM19 10.5C19.8284 10.5 20.5 9.82843 20.5 9C20.5 8.17157 19.8284 7.5 19 7.5V10.5ZM2 10.5H19V7.5H2V10.5Z" fill="white"/>
+                <path d="M2 14.5C1.17157 14.5 0.5 15.1716 0.5 16C0.5 16.8284 1.17157 17.5 2 17.5V14.5ZM19 17.5C19.8284 17.5 20.5 16.8284 20.5 16C20.5 15.1716 19.8284 14.5 19 14.5V17.5ZM2 17.5H19V14.5H2V17.5Z" fill="white"/>
+                </svg>
             </div>
+            <div class="header__menu">
+              <div class="cross">
+                <svg class="cross-icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.95356 1.8421C2.31407 1.31547 1.36874 1.40695 0.842105 2.04644C0.315468 2.68593 0.406951 3.63126 1.04644 4.1579L2.95356 1.8421ZM18.0464 18.1579C18.6859 18.6845 19.6313 18.593 20.1579 17.9536C20.6845 17.3141 20.593 16.3687 19.9536 15.8421L18.0464 18.1579ZM1.04644 4.1579L18.0464 18.1579L19.9536 15.8421L2.95356 1.8421L1.04644 4.1579Z" fill="white"/>
+                  <path d="M19.9475 4.14785C20.5864 3.62053 20.6769 2.6751 20.1496 2.03617C19.6222 1.39725 18.6768 1.30677 18.0379 1.83409L19.9475 4.14785ZM1.05278 15.8522C0.413858 16.3795 0.323379 17.3249 0.850697 17.9638C1.37801 18.6028 2.32344 18.6932 2.96237 18.1659L1.05278 15.8522ZM18.0379 1.83409L1.05278 15.8522L2.96237 18.1659L19.9475 4.14785L18.0379 1.83409Z" fill="white"/>
+                  </svg>
+                </div>
+              <ul id="moremenu" class="header__list">
+                <!-- <img class="squid" src="" alt=""> -->
+                <li>
+                  <a href="" class="header__link">Главная</a>
+                </li>
+                <li>
+                  <a href="" class="header__link">О нас</a>
+                </li>
+                <li>
+                  <a href="" class="header__link">Блог</a>
+                </li>
+                <li>
+                  <a href="" class="header__link">Меню</a>
+                </li>
+                <li>
+                  <a href="" class="header__link">Адреса</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- SHADOW MENU FULL SCREEN -->
+          <div class="header__body shadow">
+            <div id="headermenu" class="ulleft">
+              <div id="logomain">
+            <a href="#" class="header__logo">
+              <img class="logotop" src="img/Logotopnew.png" alt="Starbuzz logo">
+            </a>
+            </div>
+            <ul class="header__list">
+              <li>
+                <a href="" class="header__link">Акции</a>
+              </li>
+              <li>
+                <a href="" class="header__link">Меню</a>
+              </li>
+            </ul>
+          </div>
+          <div class="ulright">
+            <div id="headermenu" class="header__menu">
+              <ul class="header__list">
+                <li>
+                  <a href="#" class="header__link">Доставка</a>
+                </li>
+                <li>
+                  <a href="#" class="header__link">Адреса</a>
+                </li>
+                <li>
+                  <a href="#" class="header__link">О нас</a>
+                </li>
+              <li><a href="#"><div class="avatarlogo" href="#">
+                <svg class="avatarsvg" width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17" cy="9" r="7.5" stroke="white" stroke-width="3"/>
+                  <path d="M1.5 28.5C7.5 13.5 26.5 13.5 32.5 28.5" stroke="white" stroke-width="3"/>
+                  </svg>
+              </div></a>
+            </li>
+            </ul>
+            </div>
+            </div>
+          </div>
         </div>
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
-            </div>
-            <div class="content">
-                <h3>bla bla header</h3>
-                <p>bla bla paragraph</p>
-            </div>
+      </div>
+      </header>
+      <section class="home" id="home"></section>
+<!-- Тут начинается Header nav  -->
+    <div class="wrapper">
+    <nav class="doublemenu">
+      <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="blog.html">Блог</a></li>
+      <li><a href="#">Меню</a></li>
+        </ul>
+      </nav>
+      <div class="wrapper">
+      <div id="headertextmobileblock"><h1 class="headertextmobile">КОФЕ</р></div>
+      <section class="sectionmobile" id="sectionmobile">
+        <div class="sectionmobile__firstline">
+          <div class="sectionmobile__firstlinenav"> 
+            
+            <div class="flexcoffee"><a href="#"><img src="img/Coffeeicon.png"><br><span>Кофе</span></a></div>
+            <div class="flexcoffee"><a href="#"><img src="img/Coffeeicon.png"><br><span>Чай</span></a></div>
+            <div class="flexcoffee"><a href="#"><img src="img/Coffeeicon.png"><br>Холодные<br>напитки</a></div>
+            <div class="flexcoffee"><a href="#"><img src="img/Coffeeicon.png"><br><span>Чай</span></a></div>
+            <div class="flexcoffee"><a href="#"><img src="img/Coffeeicon.png"><br><span>Кофе</span></a></div>
+          </div>
         </div>
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
-            </div>
-            <div class="content">
-                <h3>bla bla header</h3>
-                <p>bla bla paragraph</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
-            </div>
-            <div class="content">
-                <h3>bla bla header</h3>
-                <p>bla bla paragraph</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
-            </div>
-            <div class="content">
-                <h3>bla bla header</h3>
-                <p>bla bla paragraph</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
-            </div>
-            <div class="content">
-                <h3>bla bla header</h3>
-                <p>bla bla paragraph</p>
-            </div>
-        </div>
+      </section>
     </div>
-    <div id="load-more">Показать ещё</div>
-</div>
-<div class="container elixirs">
-    <h2 class="heading">НАПИТКИ</h2>
-    <div class="box-container">
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
+
+	<div id="tableContainer" class="forfooterdown">
+	<div id="tableRow" class="allcolumn">
+    <div class="sideleftmenu">
+      <h1 class="leftmenuhead">КОФЕ</h1>
+    <section id="drinks" class="column sideleft">
+      <ul class="drinksmenu">
+          <li><a href="#">Каппучино</a></li>
+          <li><a href="#">Латте</a></li>
+          <li><a href="#">Чай</a></li>
+          <li><a href="#">Каппучино</a></li>
+          <li><a href="#">Латте</a></li>
+          <li><a href="#">Чай</a></li>
+          <li><a href="#">Каппучино</a></li>
+          <li><a href="#">Латте</a></li>
+          <li><a href="#">Чай</a></li>
+          <li><a href="#">Каппучино</a></li>
+          <li><a href="#">Латте</a></li>
+          <li><a href="#">Чай</a></li>
+          <li><a href="#">Каппучино</a></li>
+          <li><a href="#">Латте</a></li>
+          <li><a href="#">Чай</a></li>
+          <a href="#"><li class="pricedownload"><i class="fa-solid fa-download fa-lg"></i>Скачать прейскурант</li>
+          </a>
+          <li><p class="priceparagraph">В прейскуранте вы найдете подробности по расценкам наших напитков и блюд.</p></li>
+      </ul>
+
+    </section>
+  </div>
+    <section id="main" class="column middle">
+      <article>
+        <div class="container_section">
+            <h2 class="heading">КОФЕ</h2>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>Клубничный капуччино</h3>
+                        <p>200 мл</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>bla bla header</h3>
+                        <p>bla bla paragraph</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>bla bla header</h3>
+                        <p>bla bla paragraph</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>bla bla header</h3>
+                        <p>bla bla paragraph</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>bla bla header</h3>
+                        <p>bla bla paragraph</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>bla bla header</h3>
+                        <p>bla bla paragraph</p>
+                    </div>
+                </div>
             </div>
-            <div class="content">
-                <h3>Клубничный капуччино</h3>
-                <p>200 мл</p>
+            <div id="load-more">Показать ещё</div>
+        </div>
+        <div class="container_section elixirs">
+            <h2 class="heading">НАПИТКИ</h2>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>Клубничный капуччино</h3>
+                        <p>200 мл</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>bla bla header</h3>
+                        <p>bla bla paragraph</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>bla bla header</h3>
+                        <p>bla bla paragraph</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>bla bla header</h3>
+                        <p>bla bla paragraph</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>bla bla header</h3>
+                        <p>bla bla paragraph</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="img/photocard01.png" alt="photocard01">
+                    </div>
+                    <div class="content">
+                        <h3>bla bla header</h3>
+                        <p>bla bla paragraph</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
-            </div>
-            <div class="content">
-                <h3>bla bla header</h3>
-                <p>bla bla paragraph</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
-            </div>
-            <div class="content">
-                <h3>bla bla header</h3>
-                <p>bla bla paragraph</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
-            </div>
-            <div class="content">
-                <h3>bla bla header</h3>
-                <p>bla bla paragraph</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
-            </div>
-            <div class="content">
-                <h3>bla bla header</h3>
-                <p>bla bla paragraph</p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="img/photocard01.png" alt="photocard01">
-            </div>
-            <div class="content">
-                <h3>bla bla header</h3>
-                <p>bla bla paragraph</p>
-            </div>
-        </div>
+    </article>
+    </section>
+
+	</div> <!-- tableRow -->
+	</div> <!-- tableContainer -->
+
+
     </div>
-</div>
+    <footer>
+      <!-- Тут начинается футер флекс контейнер -->
+          <div class="footer wrapper">
+            <!-- Тут содержимое футер флекс контейнера -->
+               <div class="footerlogo">
+                 <!-- Тут футер логотип -->
+                   <div href="#" class="footer__logo">
+                       <img class="footerlogoimg" src="img/Logotextandicon.png" alt="Starbuzz logo"></img>
+                       <br>
+                       <br>&copy; Все права защищены
+                       <br>
+                  </div>
+                  <!-- Тут футер текст и ссылки -->
+                  <div class="footernavigationblock">
+                    <div id="footernavigation" class="footernavigation">
+                      <ul class="ftnav">
+                        <li><a href="#">О КОМПАНИИ</a></li>
+                        <li><a href="#">АКЦИИ</a></li>
+                      </ul>
+                      <ul class="ftnavright">
+                        <li><a href="#">БОНУСЫ</a></li>
+                        <li><a href="#">МЕНЮ</a></li>
+                        <li><a href="#">ДОСТАВКА</a></li>
+                      </ul>
+                    </div>
+                  </div>
 
-<script>
-    let loadMoreBtn = document.querySelector('#load-more');
-    let currentItem = 6;
-
-    loadMoreBtn.onclick = () =>{
-        let boxes = [...document.querySelectorAll('.container .box-container .box')];
-        for (var i = currentItem; i < currentItem + 6; i++){
-            boxes[i].style.display = 'inline-block';
+              </div>
+          </div>
+    </footer>
+    <script>
+        let loadMoreBtn = document.querySelector('#load-more');
+        let currentItem = 6;
+    
+        loadMoreBtn.onclick = () =>{
+            let boxes = [...document.querySelectorAll('.container_section .box-container .box')];
+            for (var i = currentItem; i < currentItem + 6; i++){
+                boxes[i].style.display = 'inline-block';
+            }
+            currentItem += 6;
+            if(currentItem >= boxes.length){
+                loadMoreBtn.style.display = 'none';
+            }
         }
-        currentItem += 6;
-        if(currentItem >= boxes.length){
-            loadMoreBtn.style.display = 'none';
-        }
-    }
-
-
-  document.querySelector('#load-more').addEventListener('click', function() {
-  const c = document.querySelector('.elixirs').classList;
-  c.toggle('elixirs');
-});
-
-</script>
-
-</body>
+    
+    
+      document.querySelector('#load-more').addEventListener('click', function() {
+      const c = document.querySelector('.elixirs').classList;
+      c.toggle('elixirs');
+    });
+    
+    </script>
+  </body>
 </html>
