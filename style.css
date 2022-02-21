@@ -89,7 +89,7 @@ nav.doublemenu {
   z-index: -50;
   }
 
-  
+
 
 /* nav.doublemenu ul li {
   color: #fff;
@@ -182,6 +182,10 @@ div#tableRow, .allcolumn {
 #logomain img {
   display: block;
 }
+
+/* .logotop img {
+  min-width: 141px;
+} */
 
 section#drinks, .sideleft {
     /* display: table-cell; */
@@ -310,12 +314,11 @@ a:visited {
   /* border-bottom:    thin dotted #675c47; */
 }
 
-.coffeeimg {
+/* .coffeeimg {
   width: 35%;
   height: 35%;
-  /* margin: 10px; */
   margin-bottom: 1em;
-}
+} */
 
 header {
   background-color: #efe5d0;
@@ -481,6 +484,21 @@ nav ul li.selectedblog {
 
 img {
   max-width: 100%;
+}
+
+/* .flexcoffee img {
+  width: 34px;
+
+} */
+
+
+.flexcoffee img {
+  margin-bottom: 2px;
+}
+
+
+.footerlogoimg img {
+  width: 213px;
 }
 
 /* a.header__link {
