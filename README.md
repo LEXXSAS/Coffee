@@ -1,2 +1,2 @@
-<h2 align="center">Welcome to the Starbuzz coffee site new 
+<h2 align="left">Welcome to the Starbuzz coffee site new 
  
